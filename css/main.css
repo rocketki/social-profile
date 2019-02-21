@@ -1,0 +1,35 @@
+body {
+	font-family: 'Fira Sans';
+}
+
+a, a:hover {
+	text-decoration: none !important;
+}
+
+.btn-link:hover, .btn-link:active, .btn-link:focus {
+	text-decoration: none;
+}
+
+/*=========================== .Profile ===========================*/
+
+.avatar img {
+	display: inline-block;
+	width: 100%;
+	max-width: 140px;
+	height: auto;
+}
+
+.list-info {
+	list-style-type: none;
+	padding-left: 0; 
+}
+
+.card-header {
+	padding: 0.5rem 0;
+	background-color: dodgerblue;
+}
+
+.my-list-groups {
+	list-style-type: none;
+	padding-left: 0;
+}

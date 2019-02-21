@@ -4,10 +4,154 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Profile</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="vendor/fontawesome-free-5.7.2-web/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap-4.3.1/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+	<div class="container">
+		<header id="header"></header>
+
+		<div id="content">
+			<div class="row">
+				<div class="col-md-3">
+					<aside class="sidebar-left">
+						<div class="profile">
+							<h3 class="text-center">My Profile</h3>
+							<div class="avatar text-center">
+								<img class="rounded-circle" src="img/avatar.jpg" alt="avatar">
+							</div>
+							<hr>
+							<ul class="list-info">
+								<li>
+									<i class="fas fa-fw fa-coffee text-info"></i>&nbsp; FrontEnd Developer
+								</li>
+								<li>
+									<i class="fas fa-fw fa-home text-info""></i>&nbsp; FU Hoa Lac
+								</li>
+								<li>
+									<i class="fas fa-fw fa-birthday-cake text-info""></i>&nbsp; June 17
+								</li>
+							</ul>
+						</div> 
+
+						<div class="accordion" id="resources">
+							<div class="card">
+								<div class="card-header" id="resHeadingOne">
+									<h2 class="mb-0">
+										<button class="btn btn-link text-white w-100 text-left" type="button" data-toggle="collapse" data-target="#resCollapseOne" aria-expanded="true" aria-controls="resCollapseOne">
+											<i class="fas fa-fw fa-circle-notch"></i>&nbsp; My Groups
+										</button>
+									</h2>
+								</div>
+
+								<div id="resCollapseOne" class="collapse show" aria-labelledby="resHeadingOne" data-parent="#resources">
+									<div class="card-body">
+										<ul class="my-list-groups">
+											<li class="py-1">
+												<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-users mr-2 text-success"></i>&nbsp; FU Hòa Lạc</a>
+											</li>
+											<li class="py-1">
+												<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-chalkboard-teacher mr-2 text-gray-dark"></i>&nbsp; Diễn Đàn Tin Học</a>
+											</li>
+											<li class="py-1">
+												<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-dragon mr-2 text-danger"></i>&nbsp; Hội những người đỡ không nổi những người khó đỡ</a>
+											</li>
+											<li class="py-1">
+												<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-biohazard mr-2 text-secondary"></i>&nbsp; Web Developer VietNam</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="resHeadingTwo">
+									<h2 class="mb-0">
+										<button class="btn btn-link text-white collapsed w-100 text-left" type="button" data-toggle="collapse" data-target="#resCollapseTwo" aria-expanded="false" aria-controls="resCollapseTwo">
+											<i class="fas fa-fw fa-calendar-check"></i>&nbsp; My Events
+										</button>
+									</h2>
+								</div>
+								<div id="resCollapseTwo" class="collapse" aria-labelledby="resHeadingTwo" data-parent="#resources">
+									<div class="card-body">
+										<div class="event">
+											<section>
+												<i class="fas fa-fw fa-calendar-alt"></i>&nbsp; <time>03/03/2019</time>
+											</section>
+											<a href="#">
+												<span class="w-50 d-inline-block text-truncate">Hội chợ ẩm thực</span>
+												<span class="badge badge-danger float-right">
+													incomming
+												</span>
+											</a>
+										</div>
+										<div class="event">
+											<section>
+												<i class="fas fa-fw fa-calendar-alt"></i>&nbsp; <time>12/04/2019</time>
+											</section>
+											<a href="#">
+												<span class="w-50 d-inline-block text-truncate">Tốt Nghiệp</span>
+												<span class="badge badge-primary float-right">
+													oncomming
+												</span>
+											</a>
+										</div>
+										<div class="event">
+											<section>
+												<i class="fas fa-fw fa-calendar-alt"></i>&nbsp; <time>01/01/2019</time>
+											</section>
+											<a href="#">
+												<span class="w-50 d-inline-block text-truncate">New Year</span>
+												<span class="badge badge-secondary float-right">
+													ending
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="resHeadingThree">
+									<h2 class="mb-0">
+										<button class="btn btn-link text-white collapsed w-100 text-left" type="button" data-toggle="collapse" data-target="#resCollapseThree" aria-expanded="false" aria-controls="resCollapseThree">
+											<i class="fas fa-fw fa-camera-retro"></i>&nbsp; My Photos
+										</button>
+									</h2>
+								</div>
+								<div id="resCollapseThree" class="collapse" aria-labelledby="resHeadingThree" data-parent="#resources">
+									<div class="card-body">
+										text
+									</div>
+								</div>
+							</div>
+						</div> <!-- #resources -->
+
+						<div class="interests"></div>
+						<div class="message"></div>
+					</aside>
+				</div>
+				<div class="col-md-7">
+					<div class="status"></div>
+					<div class="posts"></div>
+				</div>
+				<div class="col-md-2">
+					<aside class="sidebar-right">
+						<div class="events"></div>
+						<div class="requests"></div>
+						<div class="ads"></div>
+					</aside>
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer">
+			&copy; 2019 Sinhdbt@gmail.com
+		</footer>
+	</div>
+
+
+
 	<script src="vendor/jquery-3.3.1.min.js"></script>
 	<script src="vendor/bootstrap-4.3.1/bootstrap.min.js"></script>
 </body>
