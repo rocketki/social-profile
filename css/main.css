@@ -56,3 +56,51 @@ a, a:hover {
 		height: 80px;
 	} 	
 }
+
+/*=========================== .friends ===========================*/
+
+.friends {
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	width: 100%;
+	max-width: 220px;
+	background-color: #eee;
+}
+
+.friend-group {
+	max-height: 450px;
+}
+
+.friend {
+	padding: 0.2rem 0.6rem 0.2rem 0.4rem;
+}
+.friend:hover {
+	background-color: #e9ebee;
+}
+.friend img {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	margin-right: 0.5rem;
+}
+
+.friend small {
+	width: 70%;
+}
+.friend i {
+	font-size: 10px;
+	margin-left: auto;
+}
+
+.show-friend {
+	display: block;
+	background-color: dodgerblue;
+	color: white;
+	padding: 0.6rem;
+
+}
+
+.show-friend:hover {
+	color: white;
+}
