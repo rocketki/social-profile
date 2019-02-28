@@ -11,182 +11,413 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div class="container">
-		<header id="header"></header>
+	<div class="wrapper">
+		<header id="header" class="shadow bg-primary">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand" href="#">HandBook</a>
+					<button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-hamburger text-white"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#" title="News">
+									<i class="fas fa-fw fa-globe-americas"></i>
+									<span class="d-lg-none">News</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" title="Friends request">
+									<i class="fas fa-fw fa-user-plus"></i>
+									<span class="d-lg-none">Friends request</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" title="Messages">
+									<i class="fas fa-fw fa-envelope"></i>
+									<span class="d-lg-none">Messages</span>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Notifications">
+									<i class="fas fa-fw fa-bell"></i>
+									<span class="d-lg-none">Notifications</span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<a class="avt-header d-none d-lg-flex" href="#" title="Account settings">
+						<img src="img/avatar.jpg">
+					</a>
+				</nav>
+			</div>
+		</header>
 
 		<div id="content">
-			<div class="row">
-				<div class="col-md-3">
-					<aside class="sidebar-left">
-						<div class="profile border shadow p-3 pl-4 mb-4 rounded">
-							<h3 class="text-center">My Profile</h3>
-							<div class="avatar text-center">
-								<img class="rounded-circle" src="img/avatar.jpg" alt="avatar">
-							</div>
-							<hr>
-							<ul class="list-info">
-								<li>
-									<i class="fas fa-fw fa-coffee text-info"></i>&nbsp; FrontEnd Developer
-								</li>
-								<li>
-									<i class="fas fa-fw fa-home text-info""></i>&nbsp; FU Hoa Lac
-								</li>
-								<li>
-									<i class="fas fa-fw fa-birthday-cake text-info""></i>&nbsp; June 17
-								</li>
-							</ul>
-						</div> 
-
-						<div class="accordion mb-4 shadow" id="resources">
-							<div class="card">
-								<div class="card-header" id="resHeadingOne">
-									<h2 class="mb-0">
-										<button class="btn btn-link text-white w-100 text-left" type="button" data-toggle="collapse" data-target="#resCollapseOne" aria-expanded="true" aria-controls="resCollapseOne">
-											<i class="fas fa-fw fa-circle-notch"></i>&nbsp; My Groups
-										</button>
-									</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<aside class="sidebar-left">
+							<div class="profile border shadow p-3 pl-4 mb-4 rounded">
+								<h3 class="text-center">My Profile</h3>
+								<div class="avatar text-center">
+									<img class="rounded-circle" src="img/avatar.jpg" alt="avatar">
 								</div>
-
-								<div id="resCollapseOne" class="collapse show" aria-labelledby="resHeadingOne" data-parent="#resources">
-									<div class="card-body">
-										<ul class="my-list-groups">
-											<li class="py-1">
-												<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-users mr-2 text-success"></i>&nbsp; FU Hòa Lạc</a>
-											</li>
-											<li class="py-1">
-												<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-chalkboard-teacher mr-2 text-gray-dark"></i>&nbsp; Diễn Đàn Tin Học</a>
-											</li>
-											<li class="py-1">
-												<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-dragon mr-2 text-danger"></i>&nbsp; Hội những người đỡ không nổi những người khó đỡ</a>
-											</li>
-											<li class="py-1">
-												<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-biohazard mr-2 text-secondary"></i>&nbsp; Web Developer VietNam</a>
-											</li>
-										</ul>
+								<hr>
+								<ul class="list-info">
+									<li>
+										<i class="fas fa-fw fa-coffee text-info"></i>&nbsp; FrontEnd Developer
+									</li>
+									<li>
+										<i class="fas fa-fw fa-home text-info""></i>&nbsp; FU Hoa Lac
+									</li>
+									<li>
+										<i class="fas fa-fw fa-birthday-cake text-info""></i>&nbsp; June 17
+									</li>
+								</ul>
+							</div> 
+				
+							<div class="accordion mb-4 shadow" id="resources">
+								<div class="card">
+									<div class="card-header" id="resHeadingOne">
+										<h2 class="mb-0">
+											<button class="btn btn-link text-white w-100 text-left" type="button" data-toggle="collapse" data-target="#resCollapseOne" aria-expanded="true" aria-controls="resCollapseOne">
+												<i class="fas fa-fw fa-circle-notch"></i>&nbsp; My Groups
+											</button>
+										</h2>
 									</div>
-								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" id="resHeadingTwo">
-									<h2 class="mb-0">
-										<button class="btn btn-link text-white collapsed w-100 text-left" type="button" data-toggle="collapse" data-target="#resCollapseTwo" aria-expanded="false" aria-controls="resCollapseTwo">
-											<i class="fas fa-fw fa-calendar-check"></i>&nbsp; My Events
-										</button>
-									</h2>
-								</div>
-								<div id="resCollapseTwo" class="collapse" aria-labelledby="resHeadingTwo" data-parent="#resources">
-									<div class="card-body">
-										<div class="event">
-											<section>
-												<i class="fas fa-fw fa-calendar-alt"></i>&nbsp; <time>03/03/2019</time>
-											</section>
-											<a href="#">
-												<span class="w-50 d-inline-block text-truncate">Hội chợ ẩm thực</span>
-												<span class="badge badge-danger float-right">
-													oncomming
-												</span>
-											</a>
-										</div>
-										<div class="event">
-											<section>
-												<i class="fas fa-fw fa-calendar-alt"></i>&nbsp; <time>12/04/2019</time>
-											</section>
-											<a href="#">
-												<span class="w-50 d-inline-block text-truncate">Tốt Nghiệp</span>
-												<span class="badge badge-success float-right">
-													upcomming
-												</span>
-											</a>
-										</div>
-										<div class="event">
-											<section>
-												<i class="fas fa-fw fa-calendar-alt"></i>&nbsp; <time>01/01/2019</time>
-											</section>
-											<a href="#">
-												<span class="w-50 d-inline-block text-truncate">New Year</span>
-												<span class="badge badge-secondary float-right">
-													ending
-												</span>
-											</a>
+				
+									<div id="resCollapseOne" class="collapse show" aria-labelledby="resHeadingOne" data-parent="#resources">
+										<div class="card-body">
+											<ul class="my-list-groups">
+												<li class="py-1">
+													<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-users mr-2 text-success"></i>&nbsp; FU Hòa Lạc</a>
+												</li>
+												<li class="py-1">
+													<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-chalkboard-teacher mr-2 text-gray-dark"></i>&nbsp; Diễn Đàn Tin Học</a>
+												</li>
+												<li class="py-1">
+													<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-dragon mr-2 text-danger"></i>&nbsp; Hội những người đỡ không nổi những người khó đỡ</a>
+												</li>
+												<li class="py-1">
+													<a class="text-truncate d-block" href="#"><i class="fas fa-fw fa-biohazard mr-2 text-secondary"></i>&nbsp; Web Developer VietNam</a>
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="card">
-								<div class="card-header" id="resHeadingThree">
-									<h2 class="mb-0">
-										<button class="btn btn-link text-white collapsed w-100 text-left" type="button" data-toggle="collapse" data-target="#resCollapseThree" aria-expanded="false" aria-controls="resCollapseThree">
-											<i class="fas fa-fw fa-camera-retro"></i>&nbsp; My Photos
-										</button>
-									</h2>
-								</div>
-								<div id="resCollapseThree" class="collapse" aria-labelledby="resHeadingThree" data-parent="#resources">
-									<div class="card-body">
-										<table class="my-photo">
-											<tr>
-												<td><img src="img/myphoto_6.jpg" alt=""></td>
-												<td><img src="img/myphoto_5.jpg" alt=""></td>
-												<td><img src="img/myphoto_9.jpg" alt=""></td>
-											</tr>
-											<tr>
-												<td><img src="img/myphoto_2.jpg" alt=""></td>
-												<td><img src="img/myphoto_3.jpg" alt=""></td>
-												<td><img src="img/myphoto_4.jpg" alt=""></td>
-											</tr>
-											<tr>
-												<td><img src="img/myphoto_7.jpg" alt=""></td>
-												<td><img src="img/myphoto_1.png" alt=""></td>
-												<td><img src="img/myphoto_8.jpg" alt=""></td>
-											</tr>
-										</table>
+								<div class="card">
+									<div class="card-header" id="resHeadingTwo">
+										<h2 class="mb-0">
+											<button class="btn btn-link text-white collapsed w-100 text-left" type="button" data-toggle="collapse" data-target="#resCollapseTwo" aria-expanded="false" aria-controls="resCollapseTwo">
+												<i class="fas fa-fw fa-calendar-check"></i>&nbsp; My Events
+											</button>
+										</h2>
+									</div>
+									<div id="resCollapseTwo" class="collapse" aria-labelledby="resHeadingTwo" data-parent="#resources">
+										<div class="card-body">
+											<div class="event">
+												<section>
+													<i class="fas fa-fw fa-calendar-alt"></i>&nbsp; <time>03/03/2019</time>
+												</section>
+												<a href="#">
+													<span class="w-50 d-inline-block text-truncate">Hội chợ ẩm thực</span>
+													<span class="badge badge-danger float-right">
+														oncomming
+													</span>
+												</a>
+											</div>
+											<div class="event">
+												<section>
+													<i class="fas fa-fw fa-calendar-alt"></i>&nbsp; <time>12/04/2019</time>
+												</section>
+												<a href="#">
+													<span class="w-50 d-inline-block text-truncate">Tốt Nghiệp</span>
+													<span class="badge badge-success float-right">
+														upcomming
+													</span>
+												</a>
+											</div>
+											<div class="event">
+												<section>
+													<i class="fas fa-fw fa-calendar-alt"></i>&nbsp; <time>01/01/2019</time>
+												</section>
+												<a href="#">
+													<span class="w-50 d-inline-block text-truncate">New Year</span>
+													<span class="badge badge-secondary float-right">
+														ending
+													</span>
+												</a>
+											</div>
+										</div>
 									</div>
 								</div>
+								<div class="card">
+									<div class="card-header" id="resHeadingThree">
+										<h2 class="mb-0">
+											<button class="btn btn-link text-white collapsed w-100 text-left" type="button" data-toggle="collapse" data-target="#resCollapseThree" aria-expanded="false" aria-controls="resCollapseThree">
+												<i class="fas fa-fw fa-camera-retro"></i>&nbsp; My Photos
+											</button>
+										</h2>
+									</div>
+									<div id="resCollapseThree" class="collapse" aria-labelledby="resHeadingThree" data-parent="#resources">
+										<div class="card-body">
+											<table class="my-photo">
+												<tr>
+													<td><img src="img/myphoto_6.jpg" alt=""></td>
+													<td><img src="img/myphoto_5.jpg" alt=""></td>
+													<td><img src="img/myphoto_9.jpg" alt=""></td>
+												</tr>
+												<tr>
+													<td><img src="img/myphoto_2.jpg" alt=""></td>
+													<td><img src="img/myphoto_3.jpg" alt=""></td>
+													<td><img src="img/myphoto_4.jpg" alt=""></td>
+												</tr>
+												<tr>
+													<td><img src="img/myphoto_7.jpg" alt=""></td>
+													<td><img src="img/myphoto_1.png" alt=""></td>
+													<td><img src="img/myphoto_8.jpg" alt=""></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div> <!-- #resources -->
+				
+							<div class="interests border rounded shadow p-3 mb-4">
+								<h5 class="font-weight-bold">Interests</h5>
+								<div>
+									<span class="badge badge-danger">News</span>
+									<span class="badge badge-dark">FU Hoa Lac</span>
+									<span class="badge badge-info">PRO201</span>
+									<span class="badge badge-primary">Friend</span>
+									<span class="badge badge-warning">games</span>
+									<span class="badge badge-success">My class</span>
+									<span class="badge badge-primary">Design</span>
+									<span class="badge badge-secondary">photo</span>
+									<span class="badge badge-primary">School</span>
+									<span class="badge badge-danger">code</span>
+								</div>
 							</div>
-						</div> <!-- #resources -->
-
-						<div class="interests border rounded shadow p-3 mb-4">
-							<h5 class="font-weight-bold">Interests</h5>
-							<div>
-								<span class="badge badge-danger">News</span>
-								<span class="badge badge-dark">FU Hoa Lac</span>
-								<span class="badge badge-info">PRO201</span>
-								<span class="badge badge-primary">Friend</span>
-								<span class="badge badge-warning">games</span>
-								<span class="badge badge-success">My class</span>
-								<span class="badge badge-primary">Design</span>
-								<span class="badge badge-secondary">photo</span>
-								<span class="badge badge-primary">School</span>
-								<span class="badge badge-danger">code</span>
+							<div class="message">
+								<div class="alert alert-warning alert-dismissible fade show shadow" role="alert">
+									<strong>Hey!</strong><br><br> People are looking at your profile. Find out who.
+									<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
 							</div>
-						</div>
-						<div class="message">
-							<div class="alert alert-warning alert-dismissible fade show shadow" role="alert">
-								<strong>Hey!</strong><br><br> People are looking at your profile. Find out who.
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
+						</aside> <!-- /.sidebar-left -->
+					</div>
+					<div class="col-md-6 center-content">
+						<div class="status shadow rounded p-3">
+							<form id="status-form" class="clearfix">
+								<div class="form-group">
+									<label for="status-field">Share your post</label>
+									<textarea class="form-control" id="status-field" placeholder="What do you think?"></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary float-right">
+									<i class="fas fa-feather-alt"></i> &nbsp;Post
 								</button>
-							</div>
+							</form>
 						</div>
-					</aside> <!-- /.sidebar-left -->
-				</div>
-				<div class="col-md-6">
-					<div class="status"></div>
-					<div class="posts"></div>
-				</div>
-				<div class="col-md-3">
-					<aside class="sidebar-right">
-						<div class="ads"></div>
-					</aside> <!-- /.sidebar-right -->
+						<div class="posts mt-5">
+							<div class="post my-3 shadow rounded p-3">
+								<div class="stt-header d-flex align-items-center">
+									<a href="#"><img class="rounded-circle post-avt" src="img/avatar.jpg"></a>
+									<div class="d-inline-block ml-2">
+										<a class="" href="#"><h5 class="mb-0 d-inline-block">Dinh Ba Thi Sinh</h5></a>
+										<small>5 min ago</small>
+									</div>
+									<div class="btn-group ml-auto mb-auto ">
+										<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fas fa-ellipsis-v text-secondary"></i>
+										</a>
+										<div class="dropdown-menu dropdown-menu-right">
+											<button class="dropdown-item" type="button">
+												<i class="fas fa-fw fa-edit"></i>
+												Edit
+											</button>
+											<button class="dropdown-item" type="button">
+												<i class="fas fa-fw fa-eye-slash"></i>
+												Hidden
+											</button>
+											<button class="dropdown-item text-danger" type="button">
+												<i class="fas fa-fw fa-trash-alt"></i>
+												Delete
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="pt-2 text-justify">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+								<hr>
+								<button class="btn btn-primary btn-like active"><i class="fas fa-thumbs-up"></i>&nbsp;Like</button>
+								<button class="btn btn-primary btn-comment" data-toggle="collapse" data-target="#comment-box-1" aria-expanded="false" aria-controls="comment-box-1">
+									<i class="fas fa-comment-alt"></i>&nbsp;Comment
+								</button>
+								<div class="likes d-inline float-right">
+									<i class="far fa-thumbs-up text-primary"></i>&nbsp; <span>2323</span>
+								</div>
+								<div class="collapse" id="comment-box-1">
+									<div class="pt-3">
+										<textarea class="pl-3 form-control d-inline-block"></textarea>
+									</div>
+								</div>
+							</div> <!-- /.post -->
+
+							<div class="post my-3 shadow rounded p-3">
+								<div class="stt-header d-flex align-items-center">
+									<a href="#"><img class="rounded-circle post-avt" src="img/avatar.jpg"></a>
+									<div class="d-inline-block ml-2">
+										<a class="" href="#"><h5 class="mb-0 d-inline-block">Dinh Ba Thi Sinh</h5></a>
+										<small>5 min ago</small>
+									</div>
+									<div class="btn-group ml-auto mb-auto ">
+										<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fas fa-ellipsis-v text-secondary"></i>
+										</a>
+										<div class="dropdown-menu dropdown-menu-right">
+											<button class="dropdown-item" type="button">
+												<i class="fas fa-fw fa-edit"></i>
+												Edit
+											</button>
+											<button class="dropdown-item" type="button">
+												<i class="fas fa-fw fa-eye-slash"></i>
+												Hidden
+											</button>
+											<button class="dropdown-item text-danger" type="button">
+												<i class="fas fa-fw fa-trash-alt"></i>
+												Delete
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="pt-2 text-justify">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+								<hr>
+								<button class="btn btn-primary btn-like active"><i class="fas fa-thumbs-up"></i>&nbsp;Like</button>
+								<button class="btn btn-primary btn-comment" data-toggle="collapse" data-target="#comment-box-2" aria-expanded="false" aria-controls="comment-box-2">
+									<i class="fas fa-comment-alt"></i>&nbsp;Comment
+								</button>
+								<div class="likes d-inline float-right">
+									<i class="far fa-thumbs-up text-primary"></i>&nbsp; <span>2323</span>
+								</div>
+								<div class="collapse" id="comment-box-2">
+									<div class="pt-3">
+										<textarea class="pl-3 form-control d-inline-block"></textarea>
+										<div class="user-cmt d-flex justify-content-between mt-3">
+											<a class="user-cmt-avt" href="#"><img src="img/user_avt_1.jpg"></a>
+											<div class="user-cmt-content px-2 pt-1 d-inline-block">
+												<a href="#">
+													Tuấn
+												</a>
+												<div class="d-inline">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+												<section class="small">
+													<a class="text-secondary mr-2" href="#">Like</a>
+													<a class="text-secondary mr-2" href="#">Reply</a>
+													<a class="text-secondary mr-2" href="#"><time><i class="far fa-clock"></i>&nbsp; 12h ago</time></a>
+												</section>
+											</div>
+											<div class="btn-group cmt-action">
+												<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fas fa-ellipsis-v text-secondary"></i>
+												</a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<button class="dropdown-item" type="button">
+														<i class="fas fa-fw fa-edit"></i>
+														Edit
+													</button>
+													<button class="dropdown-item" type="button">
+														<i class="fas fa-fw fa-eye-slash"></i>
+														Hidden
+													</button>
+													<button class="dropdown-item text-danger" type="button">
+														<i class="fas fa-fw fa-trash-alt"></i>
+														Delete
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="user-cmt d-flex justify-content-between mt-3">
+											<a class="user-cmt-avt" href="#"><img src="img/user_avt_1.jpg"></a>
+											<div class="user-cmt-content px-2 pt-1 d-inline-block">
+												<a href="#">
+													Tuấn
+												</a>
+												<div class="d-inline">ihihhihi</div>
+												<section class="small">
+													<a class="text-secondary mr-2" href="#">Like</a>
+													<a class="text-secondary mr-2" href="#">Reply</a>
+													<a class="text-secondary mr-2" href="#"><time><i class="far fa-clock"></i>&nbsp; 12h ago</time></a>
+												</section>
+											</div>
+											<div class="btn-group cmt-action">
+												<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fas fa-ellipsis-v text-secondary"></i>
+												</a>
+												<div class="dropdown-menu dropdown-menu-right">
+													<button class="dropdown-item" type="button">
+														<i class="fas fa-fw fa-edit"></i>
+														Edit
+													</button>
+													<button class="dropdown-item" type="button">
+														<i class="fas fa-fw fa-eye-slash"></i>
+														Hidden
+													</button>
+													<button class="dropdown-item text-danger" type="button">
+														<i class="fas fa-fw fa-trash-alt"></i>
+														Delete
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> <!-- /.post -->
+						</div> <!-- /.posts -->
+					</div>
+					<div class="col-md-3 ">
+						<aside class="sidebar-right float-right">
+							<div class="ads">
+								<a href="#"><img style="max-width: 100%;" src="img/ads_1.jpg"></a>
+							</div>
+						</aside> <!-- /.sidebar-right -->
+					</div>
 				</div>
 			</div>
 		</div> <!-- /#content -->
 
 		<footer id="footer">
-			&copy; 2019 Sinhdbt@gmail.com
+			<div class="container">&copy; 2019 Sinhdbt@gmail.com</div>
 		</footer>
 
 		<div class="friends">
-			<a class="show-friend rounded" data-toggle="collapse" href="#friend-show" role="button" aria-expanded="false" aria-controls="friend-show">
+			<a class="show-friend rounded-top" data-toggle="collapse" href="#friend-show" role="button" aria-expanded="false" aria-controls="friend-show">
 				<i class="fas fa-fw fa-users"></i>&nbsp; Friends
 			</a>
 			<div class="collapse" id="friend-show">
@@ -261,6 +492,7 @@
 
 
 	<script src="vendor/jquery-3.3.1.min.js"></script>
+	<script src="vendor/bootstrap-4.3.1/popper.min.js"></script>
 	<script src="vendor/bootstrap-4.3.1/bootstrap.min.js"></script>
 	<script src="vendor/simplebar-simplebar-3.1.3/simplebar.js"></script>
 </body>

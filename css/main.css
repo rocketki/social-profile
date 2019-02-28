@@ -9,6 +9,46 @@ a, a:hover {
 .btn-link:hover, .btn-link:active, .btn-link:focus {
 	text-decoration: none;
 }
+/*=========================== .header ===========================*/
+#header {
+	margin-bottom: 35px;
+ 
+}
+.avt-header {
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border: 1px solid white;
+	border-radius: 50%;
+	transition: 0.3s transform ease;
+
+}
+
+.avt-header:hover {
+	transform: rotate(360deg);
+}
+
+.avt-header img {
+	max-width: 100%;
+	height: auto;
+
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:active {
+	color: white;
+}
+.navbar-light .navbar-brand:hover {
+	color: rgb(255,255,255,0.7);
+}
+
+#navbarSupportedContent .nav-link {
+	color: white;
+}
+
+#navbarSupportedContent .nav-link:hover {
+	color: rgb(255,255,255,0.7);
+}
+
 
 /*=========================== .Profile ===========================*/
 
@@ -57,23 +97,24 @@ a, a:hover {
 	} 	
 }
 
+
 /*=========================== .friends ===========================*/
 
 .friends {
 	position: fixed;
 	bottom: 0;
-	right: 15px;
+	right: 0;
 	width: 100%;
-	max-width: 220px;
+	max-width: 270px;
 	background-color: #eee;
 }
 
 .friend-group {
-	max-height: 450px;
+	max-height: 500px;
 }
 
 .friend {
-	padding: 0.2rem 0.6rem 0.2rem 0.4rem;
+	padding: 0.2rem 0.9rem 0.2rem 0.4rem;
 }
 .friend:hover {
 	background-color: #e9ebee;
@@ -89,13 +130,13 @@ a, a:hover {
 	width: 70%;
 }
 .friend i {
-	font-size: 10px;
+	font-size: 8px;
 	margin-left: auto;
 }
 
 .show-friend {
 	display: block;
-	background-color: dodgerblue;
+	background-color: #007BFF;
 	color: white;
 	padding: 0.6rem;
 
@@ -103,4 +144,55 @@ a, a:hover {
 
 .show-friend:hover {
 	color: white;
+}
+
+/*=========================== .status ===========================*/
+
+
+
+#status-form label {
+	font-size: 12px;
+	font-weight: bold;
+	f
+}
+
+#status-form {
+	/*padding: 1.5em 0;*/
+}
+
+.post-avt {
+	display: inline-block;
+	max-width: 60px;
+	height: auto;
+}
+
+.stt-header small {
+	display: inherit;
+	margin-top: -5px;
+}
+.user-cmt-avt {
+	width: 40px;
+	display: inline-block;
+}
+
+.user-cmt-avt img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.user-cmt-content {
+	width: 90%;
+	font-size: 90%;
+}
+
+.cmt-action {
+	width: 20px;
+}
+
+.sidebar-right {
+
+	position: sticky;
+	top: 0;
 }
