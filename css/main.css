@@ -76,6 +76,7 @@ a, a:hover {
 
 .my-photo {
 	margin: -1em;
+	/*vertical-align: middle;*/
 }
 
 .my-photo td {
@@ -89,6 +90,11 @@ a, a:hover {
 	height: 100%; 
 	object-fit: cover;
 	padding: 0.1rem;
+}
+
+.sl-overlay {
+	background-color: black;
+	opacity: 0.9;
 }
 
 @media (min-width: 750px) {
@@ -189,6 +195,12 @@ a, a:hover {
 
 .cmt-action {
 	width: 20px;
+}
+
+
+
+.btn-like.active {
+	color: turquoise !important;
 }
 
 .sidebar-right {
