@@ -5,7 +5,8 @@ $(document).ready(function() {
 
 
 	
-	$('#status-form button').on('click', function() {
+	$('#status-form button').on('click', function(e) {
+		e.preventDefault();
 		var newPost = $('.form-group textarea').val();
 		if ( ! newPost) {
 			return false;
@@ -55,7 +56,6 @@ $(document).ready(function() {
 					'</div>' +
 				'</div>' +
 			'</div>';
-
 		$('.posts').prepend(post);
 		$('.form-group textarea').val('');
 	});
