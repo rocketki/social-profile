@@ -197,6 +197,11 @@ a, a:hover {
 	width: 20px;
 }
 
+.cmt-style {
+	width: 100%;
+	text-overflow: ellipsis;
+}
+
 
 
 .btn-like.active {
@@ -207,4 +212,8 @@ a, a:hover {
 
 	position: sticky;
 	top: 0;
+}
+
+.hidden {
+	opacity: 0.4;
 }
