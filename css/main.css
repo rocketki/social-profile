@@ -49,6 +49,28 @@ a, a:hover {
 	color: rgb(255,255,255,0.7);
 }
 
+.search {
+	margin-right: 2em;
+}
+
+.search input {
+	border: none;
+	border-right:1px solid #ced4da;
+}
+
+.search input:focus {
+	box-shadow: none;
+}
+
+.search button {
+	background-color: white;
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.search button:hover {
+	background-color: rgb(255,255,255,0.9);
+}
 
 /*=========================== .Profile ===========================*/
 
@@ -101,6 +123,12 @@ a, a:hover {
 	.my-photo td {
 		height: 80px;
 	} 	
+}
+
+@media (min-width: 992px) {
+	.search {
+		min-width: 370px;
+	}
 }
 
 
