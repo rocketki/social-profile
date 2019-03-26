@@ -114,7 +114,7 @@ $(document).ready(function() {
 		if ($(this).hasClass('active')) {
 			count_likes.innerHTML--;
 		} else {
-			count_likes.innerHTML += 2;
+			count_likes.innerHTML++;
 		}
 
 		$(this).toggleClass('active');
